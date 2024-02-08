@@ -1,0 +1,85 @@
+/* Floating label input groups CSS Start ================> */
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  /* margin: 1em 0 1em 0; */
+  max-width: 100%;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid #e3e3e4;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :focus ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ffffff;
+}
+
+input:valid ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ffffff;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+.inputGroup .fa {
+  color: #27cfb1;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 22px !important;
+  transform: translateY(-50%);
+}
+
+.profileimg {
+  height: 200px;
+  width: 200px;
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.form-check {
+  margin-top: 20px;
+}
+
+.form-check-input {
+  height: 18px;
+  width: 18px;
+  margin-right: 2px;
+  padding-right: 5px;
+}
+
+.form-check-label {
+  margin-left: 10px !important;
+  line-height: 2px;
+  padding: unset !important;
+}
+
+/* Floating label input groups CSS End ================> */
